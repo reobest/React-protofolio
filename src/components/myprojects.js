@@ -3,6 +3,8 @@ import img2 from '../images/project2.png'
 import img3 from '../images/project3.png'
 import img4 from '../images/project4.png'
 import img5 from '../images/project5.png'
+import img6 from '../images/project6.png'
+
 const webprojects = [
         {
             id:"numberone",
@@ -27,17 +29,24 @@ const webprojects = [
         },
         {
             id:"numberfour",
-            name:"React Js AI Weather App",
-            description:"I took the helm in crafting an innovative Alan\n AI Weather website, This project aimed to seamlessly integrate Alan AI's powerful\n voice assistant capabilities with comprehensive weather data.",
+            name:"Next js e-commerce",
+            description:"Digital Hippo offers a curated selection of digital tools and tech products designed to simplify your online experience. Discover\n software, gadgets, and accessories with easy navigation and efficient service—all at your fingertips.",
             img:img4,
-            link:"https://weather-ai-3a11.onrender.com",
+            link:"https://digital-hippo-lc7e.onrender.com",
         },
         {
             id:"numberfive",
-            name:"React Js E - Commerce App",
-            description:"In the field of my web development journey, I had the\n honor of contributing to the creation of attractive e-commerce\n websites. I simulated selling some goods online via a shopping cart.",
+            name:"Next js Dribble clone App",
+            description:"flexibble is a Dribbble clone website showcasing a sleek, user-friendly interface for exploring creative portfolios. Featuring a clean design \nand intuitive navigation, it’s a perfect example of modern web aesthetics and functionality in action.",
             img:img5,
-            link:"https://e-commerce-y4f8.onrender.com",
+            link:"https://lively-lebkuchen-d73979.netlify.app",
+        },
+        {
+            id:"numbersix",
+            name:"Next js Carepulse",
+            description:"are Pulse is a comprehensive management system designed for efficient healthcare administration. Featuring a user-friendly\n interface and streamlined functionality, it facilitates patient tracking, appointment scheduling, and medical record management, enhancing overall care coordination.",
+            img:img6,
+            link:"https://main--care-pulse-managment-system.netlify.app",
         },
 ] 
 export default webprojects ;

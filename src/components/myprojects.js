@@ -4,7 +4,7 @@ import img3 from '../images/project3.png'
 import img4 from '../images/project4.png'
 import img5 from '../images/project5.png'
 import img6 from '../images/project6.png'
-
+import img7 from '../images/project6.png'
 const webprojects = [
         {
             id:"numberone",
@@ -47,6 +47,13 @@ const webprojects = [
             description:"are Pulse is a comprehensive management system designed for efficient healthcare administration. Featuring a user-friendly\n interface and streamlined functionality, it facilitates patient tracking, appointment scheduling, and medical record management, enhancing overall care coordination.",
             img:img6,
             link:"https://main--care-pulse-managment-system.netlify.app",
+        },
+        {
+            id:"numberseven",
+            name:"Next js CarHub",
+            description:"offers a sleek, user-friendly platform for buying and selling cars. With a responsive design and easy navigation, users can\n effortlessly browse listings, compare specs, and find detailed vehicle information, all from any device.",
+            img:img7,
+            link:"https://main--car-hub2024.netlify.app/",
         },
 ] 
 export default webprojects ;

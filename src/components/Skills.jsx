@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { useState, useEffect } from 'react';
 import SpaceAnimation from './Star'
 const Skills = () => {
-    const [progress1, setProgress1] = useState(0); 
+    const [progress1, setProgress1] = useState(0);
     const [progress2, setProgress2] = useState(0);
     const [progress3, setProgress3] = useState(0);
     const [progress4, setProgress4] = useState(0);
@@ -23,47 +23,47 @@ const Skills = () => {
     const [isVisible3, setIsVisible3] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
-          const scrollPosition = window.scrollY;
-          const threshold = 3150; 
-          setIsVisible3(scrollPosition > threshold);
+            const scrollPosition = window.scrollY;
+            const threshold = 3150;
+            setIsVisible3(scrollPosition > threshold);
         };
         window.addEventListener('scroll', handleScroll);
         return () => {
-          window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll);
         };
-      }, []);
+    }, []);
     return (
         <Container id='skills'>
             <Myskills>My <span>Skills</span></Myskills>
             <Technicalskills isVisible3={isVisible3} >
                 <h1>Technical Skills</h1>
                 <Teachnicalcontainer>
-                    <span>HTML</span>
-                    <span>88%</span>
-                </Teachnicalcontainer>
-                <Progresscontainer>
-                    <Progressbar style={{ width: `${progress1}%` }}></Progressbar>
-                </Progresscontainer>
-                <Teachnicalcontainer>
-                    <span>Css</span>
+                    <span>[ HTML , Css, tailwind, Styled components, Sass ]</span>
                     <span>90%</span>
                 </Teachnicalcontainer>
                 <Progresscontainer>
                     <Progressbar style={{ width: `${progress2}%` }}></Progressbar>
                 </Progresscontainer>
                 <Teachnicalcontainer>
-                    <span>Javascript</span>
+                    <span>[ Javascript, typescript ]</span>
                     <span>85%</span>
                 </Teachnicalcontainer>
                 <Progresscontainer>
                     <Progressbar style={{ width: `${progress3}%` }}></Progressbar>
                 </Progresscontainer>
                 <Teachnicalcontainer>
-                    <span>React Js</span>
+                    <span>[ React Js, Next Js ]</span>
                     <span>75%</span>
                 </Teachnicalcontainer>
                 <Progresscontainer>
                     <Progressbar style={{ width: `${progress4}%` }}></Progressbar>
+                </Progresscontainer>
+                <Teachnicalcontainer>
+                    <span>[ firebase, momgodb ]</span>
+                    <span>88%</span>
+                </Teachnicalcontainer>
+                <Progresscontainer>
+                    <Progressbar style={{ width: `${progress1}%` }}></Progressbar>
                 </Progresscontainer>
             </Technicalskills>
             <ProffesionalSkills isVisible3={isVisible3} >
@@ -107,7 +107,7 @@ const Skills = () => {
                     </Singleelementcontainer>
                 </Profeesionalskillscontainer>
             </ProffesionalSkills>
-            <SpaceAnimation/>
+            <SpaceAnimation />
         </Container>
     )
 }

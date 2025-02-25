@@ -1,17 +1,17 @@
-import React,{useState,useEffect}  from 'react'
+import React, { useState, useEffect } from 'react'
 import SpaceAnimation from './Star'
 import styled, { keyframes } from 'styled-components';
 import Cubespinner from './Cubespinner'
 import { useGlobalContext } from './Context'
 const About = () => {
   const context = useGlobalContext()
-  const {} = context
+  const { } = context
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const threshold = 600; 
+      const threshold = 600;
       setIsVisible(scrollPosition > threshold && scrollPosition < 1700);
     };
     window.addEventListener('scroll', handleScroll);
@@ -22,21 +22,16 @@ const About = () => {
   return (
     <Container id='about' isVisible={isVisible}>
       <Aboutme>About <span>Me</span></Aboutme>
-      <Cubespinner/>
-       <Frontend isVisible={isVisible}><TypewriterText>Frontend <span>Developerd</span></TypewriterText></Frontend>
-       <AboutMyself isVisible={isVisible}>
-        
-       I’m very ambitious front-end developer looking for a role in
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
-            I'm quietly confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
-            If I need to define myself in one sentence that would be a family
-            person, son of a beautiful mother, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
-     
+      <Cubespinner />
+      <Frontend isVisible={isVisible}><TypewriterText>Frontend <span>Developerd</span></TypewriterText></Frontend>
+      <AboutMyself isVisible={isVisible}>
+
+        Hello! I'm Rayan, a passionate and creative Front-End Developer who loves building dynamic and user-friendly web applications. With expertise in React.js, Next.js, and backend technologies like Node.js and MongoDB, I enjoy crafting seamless digital experiences that are both visually appealing and highly performant.
+        I have a strong foundation in computer engineering and software development, allowing me to build scalable applications with a keen eye for design, optimization, and user experience. Whether it's an e-commerce platform, a real-time chat app, or a custom web solution, I thrive on turning ideas into reality with clean and efficient code.
+        I am always eager to learn, grow, and contribute to exciting projects while staying up-to-date with the latest technologies. Let’s build something amazing together! 🚀
+
         .</AboutMyself>
-        <SpaceAnimation/>
+      <SpaceAnimation />
     </Container>
   )
 }

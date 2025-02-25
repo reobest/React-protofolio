@@ -1,7 +1,7 @@
 import React from 'react'
 import { keyframes, styled } from 'styled-components'
-import animation from '../images/22492.png'
-import rayan from '../images/rayan.webp'
+// import animation from '../images/22492.png'
+import rayan from '../images/rayan.jpeg'
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { FiInstagram } from "react-icons/fi";
 import { GrLinkedinOption, GrFacebookOption } from "react-icons/gr";
@@ -17,10 +17,7 @@ const Home = () => {
       <MyInfo>
         <h1>Hi My Name Is <span>Rayan</span>,<TypewriterText>I Am A Web Devoloper.</TypewriterText></h1>
         <p>
-          Hello! I'm Rayan I love to build amazing Applications, I am a passionate and
-          creative Frontend React Developer,
-          With a great background in Building unique websites with modern technologies ,
-          I bring a unique blend of technical skills and a keen eye for design .
+        Hello! I'm Rayan, a Front-End Developer passionate about building modern, user-friendly web applications. Skilled in React.js, Next.js, and Node.js, I focus on performance, design, and seamless user experiences. Let’s create something amazing! 🚀
         </p>
         <Socials>
           <Link to='https://facebook.com/rayan.salem.7777'><GrFacebookOption /></Link>
@@ -166,7 +163,6 @@ const MyInfo = styled.div`
         >span{
             font-weight: 600;
             color: #EA738D;
-            background:url(${animation});
             animation-name: ${Animate}; 
             animation-delay: 0ms;
             -webkit-background-clip: text;
@@ -202,8 +198,8 @@ const ProtfolioPic = styled.div`
     position: relative;
     border: #3cc6d8 solid 5px;
     border-radius: 50%;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     transition: all 2s ease-in-out;
     animation: ${bounceAnimation} 1s infinite ease-in-out,${slideInFromLeft} 2s ease-in-out;
     box-shadow: 0px 0px 40px 20px #3cc6d8;

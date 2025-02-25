@@ -280,6 +280,7 @@ const Container = styled.div`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    padding-top: 50px;
     @media  only screen  and (max-width:450px) {
         flex-direction: column;
         margin-top: 100px;

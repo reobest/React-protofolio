@@ -1,6 +1,5 @@
 import React from 'react'
 import { keyframes, styled } from 'styled-components'
-// import animation from '../images/22492.png'
 import rayan from '../images/rayan.jpeg'
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { FiInstagram } from "react-icons/fi";
@@ -20,10 +19,10 @@ const Home = () => {
         Hello! I'm Rayan, a Front-End Developer passionate about building modern, user-friendly web applications. Skilled in React.js, Next.js, and Node.js, I focus on performance, design, and seamless user experiences. Let’s create something amazing! 🚀
         </p>
         <Socials>
-          <Link to='https://facebook.com/rayan.salem.7777'><GrFacebookOption /></Link>
-          <Link to='https://wa.link/ia261k'><IoLogoWhatsapp /></Link>
-          <Link to='https://www.instagram.com/rayan_belalll_?igsh=MWcOcDEzMjZyZWd6bQ%3D%3D&utm_source=qr'><FiInstagram /></Link>
-          <Link to='https://www.linkedin.com/in/rayan-bilal-bb414925b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'><GrLinkedinOption /></Link>
+          <Link to='https://facebook.com/rayan.salem.7777' title='facebook'><GrFacebookOption /></Link>
+          <Link to='https://wa.link/ia261k' title='whatssapp'><IoLogoWhatsapp /></Link>
+          <Link to='https://www.instagram.com/rayan_belalll_?igsh=MWcOcDEzMjZyZWd6bQ%3D%3D&utm_source=qr' title='instagram'><FiInstagram /></Link>
+          <Link to='https://www.linkedin.com/in/rayan-bilal-bb414925b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' title='linkedin'><GrLinkedinOption /></Link>
         </Socials>
         <ScrollLink to="about" smooth={true} duration={1000}><Moreaboutme>More About Me</Moreaboutme></ScrollLink>
       </MyInfo>

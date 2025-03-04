@@ -1,4 +1,3 @@
-import { styled } from "styled-components";
 import SideBar from "./components/SideBar";
 import { lazy,Suspense } from "react";
 const LazyHome = lazy(() => import('./components/Home'))
@@ -8,7 +7,7 @@ const LazyProjects = lazy(() => import('./components/Projects'))
 const LazySkills = lazy(() => import('./components/Skills'))
 function App() {
   return (
-    <Container>
+    <main style={{overflowX:"hidden",background:"#0a0318"}}>
       <SideBar />
       <Suspense fallback={<h1>loading...</h1>}>
         <LazyHome/>
@@ -25,13 +24,10 @@ function App() {
       <Suspense fallback={<h1>loading...</h1>}>
         <LazySkills/>
       </Suspense>
-    </Container>
+    </main>
   );
 }
 
 export default App; 
-const Container = styled.div`
-overflow-x: hidden;
-   background: #0a0318;
-`
+
 

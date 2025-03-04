@@ -196,13 +196,14 @@ const MyInfo = styled.div`
 `
 const ProtfolioPic = styled.div`
     position: relative;
+    z-index: 999;
     border: #3cc6d8 solid 5px;
     border-radius: 50%;
     width: 300px;
     height: 300px;
     transition: all 2s ease-in-out;
     animation: ${bounceAnimation} 1s infinite ease-in-out,${slideInFromLeft} 2s ease-in-out;
-    box-shadow: 0px 0px 40px 20px #3cc6d8;
+    box-shadow: 0px 0px 10px 10px #3cc6d8;
     @media  only screen  and (max-width:450px) {
       width: 300px;
       height: 300px;

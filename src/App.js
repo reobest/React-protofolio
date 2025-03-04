@@ -31,6 +31,7 @@ function App() {
 
 export default App; 
 const Container = styled.div`
+overflow-x: hidden;
    background: #0a0318;
 `
 

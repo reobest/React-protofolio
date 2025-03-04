@@ -22,7 +22,7 @@ const Contact = () => {
         const handleScroll = () => {
           const scrollPosition = window.scrollY;
           const threshold = 1000; 
-          setIsVisible1(scrollPosition > threshold && scrollPosition < 2000);
+          setIsVisible1(scrollPosition > threshold && scrollPosition < 2500);
         };
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -73,26 +73,31 @@ const Contact = () => {
 
 export default Contact
 const YourMessege = styled.textarea`
+        font-size: 17px;
         transition: transform 3s ease-in;
         transform: ${(props) => (props.isVisible1 ? 'translateX(0)' : 'translateX(-800px)')};
         opacity: ${(props) => (props.isVisible1 ? '1' : '0')}; 
 `
 const Inputone = styled.input`
+        font-size: 17px;
         transition: transform 1s ease-in;
         transform: ${(props) => (props.isVisible1 ? 'translateX(0)' : 'translateX(-800px)')};
         opacity: ${(props) => (props.isVisible1 ? '1' : '0')}; 
 `
 const InputTwo = styled.input`
+        font-size: 17px;
         transition: transform 2s ease-in;
         transform: ${(props) => (props.isVisible1 ? 'translateX(0)' : 'translateX(800px)')};
         opacity: ${(props) => (props.isVisible1 ? '1' : '0')}; 
 `
 const InputThree = styled.input`
+        font-size: 17px;
         transition: transform 2.15s ease-in;
         transform: ${(props) => (props.isVisible1 ? 'translateX(0)' : 'translateX(-800px)')};
         opacity: ${(props) => (props.isVisible1 ? '1' : '0')}; 
 `
 const InputFour = styled.input`
+        font-size: 17px;
         transition: transform 3s ease-in;
         transform: ${(props) => (props.isVisible1 ? 'translateX(0)' : 'translateX(800px)')};
         opacity: ${(props) => (props.isVisible1 ? '1' : '0')}; 

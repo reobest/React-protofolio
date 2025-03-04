@@ -22,8 +22,8 @@ const Projects = () => {
     }, []);
     const NewWebProjects = webprojects.map((project) => {
         const { id, name, description, img, link } = project
-        return <Link to={link}><Wrapper id={id} onMouseMove={Handlehover} onMouseLeave={() => setHide(false)} isVisible2={isVisible2} >
-            <Black hide={hide} className="InnerComponent"></Black>
+        return <Link to={link} key={id}><Wrapper id={id} onMouseMove={Handlehover} onMouseLeave={() => setHide(false)} isVisible2={isVisible2} >
+            <Black hide={hide ? 'true' : undefined} className="InnerComponent"></Black>
             <img src={img} alt={description} />
             <h1>{name}</h1>
             <p>{description}</p>

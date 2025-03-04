@@ -36,38 +36,38 @@ const Skills = () => {
         <Container id='skills'>
             <Myskills>My <span>Skills</span></Myskills>
             <Technicalskills isVisible3={isVisible3} >
-                <h1>Technical Skills</h1>
-                <Teachnicalcontainer>
+                <h2>Technical Skills</h2>
+                <Technicalcontainer>
                     <span>[ HTML , Css, tailwind, Styled components, Sass ]</span>
                     <span>90%</span>
-                </Teachnicalcontainer>
+                </Technicalcontainer>
                 <Progresscontainer>
                     <Progressbar style={{ width: `${progress2}%` }}></Progressbar>
                 </Progresscontainer>
-                <Teachnicalcontainer>
+                <Technicalcontainer>
                     <span>[ Javascript, typescript ]</span>
                     <span>85%</span>
-                </Teachnicalcontainer>
+                </Technicalcontainer>
                 <Progresscontainer>
                     <Progressbar style={{ width: `${progress3}%` }}></Progressbar>
                 </Progresscontainer>
-                <Teachnicalcontainer>
+                <Technicalcontainer>
                     <span>[ React Js, Next Js ]</span>
                     <span>75%</span>
-                </Teachnicalcontainer>
+                </Technicalcontainer>
                 <Progresscontainer>
                     <Progressbar style={{ width: `${progress4}%` }}></Progressbar>
                 </Progresscontainer>
-                <Teachnicalcontainer>
-                    <span>[ firebase, momgodb ]</span>
+                <Technicalcontainer>
+                    <span>[ firebase, MongoDB ]</span>
                     <span>88%</span>
-                </Teachnicalcontainer>
+                </Technicalcontainer>
                 <Progresscontainer>
                     <Progressbar style={{ width: `${progress1}%` }}></Progressbar>
                 </Progresscontainer>
             </Technicalskills>
-            <ProffesionalSkills isVisible3={isVisible3} >
-                <h1>Proffesional Skills</h1>
+            <ProfessionalSkills isVisible3={isVisible3} >
+                <h2>Proffesional Skills</h2>
                 <Profeesionalskillscontainer>
                     <Singleelementcontainer>
                         <Cont id="cont1" data-pct="100">
@@ -94,7 +94,7 @@ const Skills = () => {
                                 <circle id="bar" r="46" cx="50" cy="50" fill="transparent" strokeDasharray="217.48" strokeDashoffset="0"></circle>
                             </Svg>
                         </Cont>
-                        <h3>Project Managment</h3>
+                        <h3>Project Management</h3>
                     </Singleelementcontainer>
                     <Singleelementcontainer>
                         <Cont id="cont4" data-pct="100">
@@ -106,7 +106,7 @@ const Skills = () => {
                         <h3>Communication</h3>
                     </Singleelementcontainer>
                 </Profeesionalskillscontainer>
-            </ProffesionalSkills>
+            </ProfessionalSkills>
             <SpaceAnimation />
         </Container>
     )
@@ -183,7 +183,7 @@ circle{
     stroke: #3cc6d8;
 }
 `
-const ProffesionalSkills = styled.div`
+const ProfessionalSkills = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -206,7 +206,7 @@ h1{
         letter-spacing: 2px;
     }
 `
-const Teachnicalcontainer = styled.div`
+const Technicalcontainer = styled.div`
     display: flex;
     width: 100%;
     align-items: flex-end;

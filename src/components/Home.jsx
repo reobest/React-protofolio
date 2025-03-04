@@ -11,10 +11,10 @@ const Home = () => {
   return (
     <Container id='home'>
       <ProtfolioPic>
-        <img src={rayan} alt='rayan' />
+        <img src={rayan} alt='rayan' loading="eager" fetchpriority="high"/>
       </ProtfolioPic>
       <MyInfo>
-        <h1>Hi My Name Is <span>Rayan</span>,<TypewriterText>I Am A Web Devoloper.</TypewriterText></h1>
+        <h1>Hi My Name Is <span>Rayan</span><TypewriterText>I Am A Web Devoloper.</TypewriterText></h1>
         <p>
         Hello! I'm Rayan, a Front-End Developer passionate about building modern, user-friendly web applications. Skilled in React.js, Next.js, and Node.js, I focus on performance, design, and seamless user experiences. Let’s create something amazing! 🚀
         </p>
@@ -24,7 +24,7 @@ const Home = () => {
           <Link to='https://www.instagram.com/rayan_belalll_?igsh=MWcOcDEzMjZyZWd6bQ%3D%3D&utm_source=qr' title='instagram'><FiInstagram /></Link>
           <Link to='https://www.linkedin.com/in/rayan-bilal-bb414925b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' title='linkedin'><GrLinkedinOption /></Link>
         </Socials>
-        <ScrollLink to="about" smooth={true} duration={1000}><Moreaboutme>More About Me</Moreaboutme></ScrollLink>
+        <a href="#about"><ScrollLink to="about" smooth={true} duration={1000} href="#about"><Moreaboutme>More About Me</Moreaboutme></ScrollLink></a>
       </MyInfo>
       <SpaceAnimation />
     </Container>
@@ -179,6 +179,7 @@ const MyInfo = styled.div`
             font-family: "Playfair Display", serif;
             font-optical-sizing: auto;
             font-style: normal;
+            font-display: swap;
             line-height: 20px;
             font-weight: 200;
             font-size: 16px;

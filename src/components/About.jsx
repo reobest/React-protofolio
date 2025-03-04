@@ -2,10 +2,7 @@ import React, { useState, useEffect } from 'react'
 import SpaceAnimation from './Star'
 import styled, { keyframes } from 'styled-components';
 import Cubespinner from './Cubespinner'
-import { useGlobalContext } from './Context'
 const About = () => {
-  const context = useGlobalContext()
-  const { } = context
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -20,7 +17,7 @@ const About = () => {
     };
   }, []);
   return (
-    <Container id='about' isVisible={isVisible}>
+    <Container id='about' $isVisible={isVisible}>
       <Aboutme>About <span>Me</span></Aboutme>
       <Cubespinner />
       <Frontend isVisible={isVisible}><TypewriterText>Frontend <span>Developerd</span></TypewriterText></Frontend>

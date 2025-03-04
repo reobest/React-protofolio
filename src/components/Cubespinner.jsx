@@ -9,15 +9,15 @@ import { BsGithub } from "react-icons/bs";
 import styled from 'styled-components';
 const Cubespinner = () => {
   return (
-    <div class="container">
-  <div class="cube-container">
-  <div class="cube">
-    <div class="cube-side cube-side--front"><Reactsvg/></div>
-    <div class="cube-side cube-side--back"><Htmlsvg/></div>
-    <div class="cube-side cube-side--right"><Csslsvg/></div>
-    <div class="cube-side cube-side--left"><Javascriptlsvg/></div>
-    <div class="cube-side cube-side--top"><NodeJslsvg/></div>
-    <div class="cube-side cube-side--bottom"><Githublsvg/></div>
+    <div className="container">
+  <div className="cube-container">
+  <div className="cube">
+    <div className="cube-side cube-side--front"><Reactsvg/></div>
+    <div className="cube-side cube-side--back"><Htmlsvg/></div>
+    <div className="cube-side cube-side--right"><Csslsvg/></div>
+    <div className="cube-side cube-side--left"><Javascriptlsvg/></div>
+    <div className="cube-side cube-side--top"><NodeJslsvg/></div>
+    <div className="cube-side cube-side--bottom"><Githublsvg/></div>
   </div>
   </div>
 </div>

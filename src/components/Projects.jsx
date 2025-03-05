@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import webprojects from '../projects/myprojects'
 import SpaceAnimation from './Star'
-import { Link } from 'react-router-dom'
 const Projects = () => {
     const [hide, setHide] = useState(false)
     const Handlehover = () => {
@@ -22,12 +21,12 @@ const Projects = () => {
     }, []);
     const NewWebProjects = webprojects.map((project) => {
         const { id, name, description, img, link } = project
-        return <Link to={link} key={id}><Wrapper id={id} onMouseMove={Handlehover} onMouseLeave={() => setHide(false)} isVisible2={isVisible2} >
+        return <a href={link} key={id}><Wrapper id={id} onMouseMove={Handlehover} onMouseLeave={() => setHide(false)} isVisible2={isVisible2} >
             <Black hide={hide ? 'true' : undefined} className="InnerComponent"></Black>
             <img src={img} alt={description} />
             <h1>{name}</h1>
             <p>{description}</p>
-        </Wrapper></Link>
+        </Wrapper></a>
     })
     return (
         <Container id='education' >

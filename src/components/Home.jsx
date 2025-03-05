@@ -6,7 +6,7 @@ import { FiInstagram } from "react-icons/fi";
 import { GrLinkedinOption, GrFacebookOption } from "react-icons/gr";
 import SpaceAnimation from './Star'
 import { Link as ScrollLink } from 'react-scroll';
-import { Link } from 'react-router-dom';
+
 const Home = () => {
   return (
     <Container id='home'>
@@ -14,17 +14,29 @@ const Home = () => {
         <img src={rayan} alt='rayan' loading="eager" fetchpriority="high"/>
       </ProtfolioPic>
       <MyInfo>
-        <h1>Hi My Name Is <span>Rayan</span><TypewriterText>I Am A Web Devoloper.</TypewriterText></h1>
+        <h1>Hi My Name Is <span>Rayan</span><TypewriterText>I Am A Web Developer.</TypewriterText></h1>
         <p>
         Hello! I'm Rayan, a Front-End Developer passionate about building modern, user-friendly web applications. Skilled in React.js, Next.js, and Node.js, I focus on performance, design, and seamless user experiences. Let’s create something amazing! 🚀
         </p>
         <Socials>
-          <Link to='https://facebook.com/rayan.salem.7777' title='facebook'><GrFacebookOption /></Link>
-          <Link to='https://wa.link/ia261k' title='whatssapp'><IoLogoWhatsapp /></Link>
-          <Link to='https://www.instagram.com/rayan_belalll_?igsh=MWcOcDEzMjZyZWd6bQ%3D%3D&utm_source=qr' title='instagram'><FiInstagram /></Link>
-          <Link to='https://www.linkedin.com/in/rayan-bilal-bb414925b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' title='linkedin'><GrLinkedinOption /></Link>
+          <a href='https://facebook.com/rayan.salem.7777' title='facebook' target='_blank' rel='noopener noreferrer'>
+            <GrFacebookOption />
+          </a>
+          <a href='https://wa.link/ia261k' title='whatsapp' target='_blank' rel='noopener noreferrer'>
+            <IoLogoWhatsapp />
+          </a>
+          <a href='https://www.instagram.com/rayan_belalll_?igsh=MWcOcDEzMjZyZWd6bQ%3D%3D&utm_source=qr' title='instagram' target='_blank' rel='noopener noreferrer'>
+            <FiInstagram />
+          </a>
+          <a href='https://www.linkedin.com/in/rayan-bilal-bb414925b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' title='linkedin' target='_blank' rel='noopener noreferrer'>
+            <GrLinkedinOption />
+          </a>
         </Socials>
-        <a href="#about"><ScrollLink to="about" smooth={true} duration={1000} href="#about"><Moreaboutme>More About Me</Moreaboutme></ScrollLink></a>
+        <a href="#about">
+          <ScrollLink to="about" smooth={true} duration={1000}>
+            <Moreaboutme>More About Me</Moreaboutme>
+          </ScrollLink>
+        </a>
       </MyInfo>
       <SpaceAnimation />
     </Container>
@@ -32,6 +44,7 @@ const Home = () => {
 }
 
 export default Home
+
 const Moreaboutme = styled.button`
    margin-top: 30px;
    font-size: 15px;
@@ -52,6 +65,7 @@ const Moreaboutme = styled.button`
   background-color: #3cc6d8;
   }
 `
+
 const typingAnimation = keyframes`
   from {
     width: 0;
@@ -60,11 +74,13 @@ const typingAnimation = keyframes`
     width: 100%;
   }
 `
+
 const TypewriterText = styled.div`
   overflow: hidden;
   white-space: nowrap;
   animation: ${typingAnimation} 4s steps(20, end) infinite;
 `
+
 const Socials = styled.div`
 margin-top: 20px;
 width: 250px;
@@ -88,6 +104,7 @@ svg{
     padding: 8px;
 }
 `
+
 const Container = styled.div`
 display: flex;
 align-items: center;
@@ -98,6 +115,7 @@ color: #fff;
 width: 100%;
 min-height:100vh;
 `
+
 const Animate = keyframes`      
 0%{
 background-position: 0% 0%;
@@ -115,6 +133,7 @@ background-position:50% 0% ;
 background-position: 0% 0%;
 }
 `
+
 const bounceAnimation = keyframes`
   0%, 100% {
     transform: translateY(0);
@@ -131,6 +150,7 @@ const bounceAnimation = keyframes`
     transform: translateY(-5px);
   }
 `
+
 const slideInFromRight = keyframes`
   from {
     transform: translateX(400px);
@@ -139,6 +159,7 @@ const slideInFromRight = keyframes`
     transform: translateX(0);
   }
 `;
+
 const slideInFromLeft = keyframes`
   from {
     transform: translateX(-400px);
@@ -147,6 +168,7 @@ const slideInFromLeft = keyframes`
     transform: translateX(0);
   }
 `;
+
 const MyInfo = styled.div`
     position: relative;
     width: 450px;
@@ -194,6 +216,7 @@ const MyInfo = styled.div`
     }
 
 `
+
 const ProtfolioPic = styled.div`
     position: relative;
     z-index: 999;
@@ -220,4 +243,3 @@ const ProtfolioPic = styled.div`
         }
     }
 `
-

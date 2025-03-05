@@ -1,3 +1,4 @@
+import React from "react";
 import SideBar from "./components/SideBar";
 import { lazy,Suspense } from "react";
 const LazyHome = lazy(() => import('./components/Home'))

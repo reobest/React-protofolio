@@ -5,11 +5,9 @@ import { BsFillPersonFill } from 'react-icons/bs';
 import { PiStudentFill } from 'react-icons/pi';
 import { Link as ScrollLink } from 'react-scroll';
 import { FaReact } from 'react-icons/fa';
-import { useGlobalContext } from './Context';
 import { GoMail } from 'react-icons/go';
 
 const SideBar = () => {
-  const { setIsOpen1 } = useGlobalContext();
   const [hovered, setHovered] = useState(null);
 
   const handleHover = useCallback((section) => setHovered(section), []);
@@ -17,7 +15,7 @@ const SideBar = () => {
 
   const navItems = [
     { id: 'home', label: 'Home', icon: <StyledHomeIcon /> },
-    { id: 'about', label: 'About Me', icon: <StyledPersonalIcon />, onClick: () => setIsOpen1(true) },
+    { id: 'about', label: 'About Me', icon: <StyledPersonalIcon />},
     { id: 'contact', label: 'Contact Me', icon: <StyledMailIcon /> },
     { id: 'education', label: 'My Projects', icon: <StyledProjectsIcon /> },
     { id: 'skills', label: 'My Skills', icon: <StyledSkillsIcon /> },

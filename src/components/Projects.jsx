@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
-import webprojects from './myprojects'
+import webprojects from '../projects/myprojects'
 import SpaceAnimation from './Star'
 import { Link } from 'react-router-dom'
 const Projects = () => {

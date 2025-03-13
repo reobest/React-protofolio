@@ -12,7 +12,7 @@ const Projects = () => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
             const threshold = 1900;
-            setIsVisible2(scrollPosition > threshold && scrollPosition < 3700);
+            setIsVisible2(scrollPosition > threshold && scrollPosition < 3300);
         };
         window.addEventListener('scroll', handleScroll);
         return () => {

@@ -17,7 +17,7 @@ const webprojects = [
             name:"React Js Slack-clone Chat App",
             description:"As a frontend React developer, I spearheaded the\n creation of a cutting-edge Slack Clone, redefining the landscape of team\n collaboration in the digital era. ",
             img:img4,
-            link:"https://fir-rayan-b57cf.web.app",
+            link:"https://slackclone-cdl8.onrender.com",
         },
         {
             id:"numberthree",

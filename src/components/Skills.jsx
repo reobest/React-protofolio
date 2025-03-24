@@ -52,14 +52,14 @@ const Skills = () => {
                     <Progressbar style={{ width: `${progress3}%` }}></Progressbar>
                 </Progresscontainer>
                 <Technicalcontainer>
-                    <span>[ React Js, Next Js ]</span>
+                    <span>[ React Js, Next Js, Express Js ]</span>
                     <span>75%</span>
                 </Technicalcontainer>
                 <Progresscontainer>
                     <Progressbar style={{ width: `${progress4}%` }}></Progressbar>
                 </Progresscontainer>
                 <Technicalcontainer>
-                    <span>[ firebase, MongoDB ]</span>
+                    <span>[ firebase, MongoDB, PostgreSQL ]</span>
                     <span>88%</span>
                 </Technicalcontainer>
                 <Progresscontainer>

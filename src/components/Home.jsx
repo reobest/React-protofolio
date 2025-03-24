@@ -14,7 +14,7 @@ const Home = () => {
         <img src={rayan} alt='rayan' loading="eager" fetchpriority="high"/>
       </ProtfolioPic>
       <MyInfo>
-        <h1>Hi My Name Is <span>Rayan</span><TypewriterText>I Am A Web Developer.</TypewriterText></h1>
+        <h1>Hi My Name Is Rayan<TypewriterText>I Am A Web Developer.</TypewriterText></h1>
         <p>
         Hello! I'm Rayan, a Front-End Developer passionate about building modern, user-friendly web applications. Skilled in React.js, Next.js, and Node.js, I focus on performance, design, and seamless user experiences. Let’s create something amazing! 🚀
         </p>

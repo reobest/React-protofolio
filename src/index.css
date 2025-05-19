@@ -4,6 +4,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*{
+  overflow: hidden;
+}
 html {
   scroll-behavior: smooth;
 }

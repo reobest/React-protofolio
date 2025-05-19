@@ -1,4 +1,12 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
 body {
   scroll-behavior: smooth;
   margin: 0;
@@ -6,9 +14,21 @@ body {
   font-display: swap;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #0a0318
+  background: black;
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 120s linear infinite;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -16,6 +36,7 @@ code {
 ::-webkit-scrollbar{
   width: 0;
 }
+
 /*////////////////////////////////////////////////////////////////////////////////////////*/
 .container {
   width: 150px;
@@ -44,36 +65,36 @@ code {
 }
 
 .cube-side--front {
-  border: solid 1px #00fff3;
+  border: solid 1px #fff;
   animation: blowout-front 4s infinite;
   transform: rotateY(0deg) translateZ(40px);
 }
 .cube-side--back {
-  border: solid 1px #00fff3;
+  border: solid 1px #fff;
   transform: rotateX(180deg) translateZ(40px);
   animation: blowout-back 4s infinite;
 }
 
 .cube-side--left {
-  border: solid 1px #00fff3;
+  border: solid 1px #fff;
   transform: rotateY(-90deg) translateZ(40px);
   animation: blowout-left 4s infinite;
 }
 
 .cube-side--right {
-  border: solid 1px #00fff3;
+  border: solid 1px #fff;
   transform: rotateY(90deg) translateZ(40px);
   animation: blowout-right 4s infinite;
 }
 
 .cube-side--top {
-  border: solid 1px #00fff3;
+  border: solid 1px #fff;
   transform: rotateX(90deg) translateZ(40px);
   animation: blowout-top 4s infinite;
 }
 
 .cube-side--bottom {
-  border: solid 1px #00fff3;
+  border: solid 1px #fff;
   transform: rotateX(-90deg) translateZ(40px);
   animation: blowout-bottom 4s infinite;
 }
@@ -156,4 +177,5 @@ code {
   transform: rotateY(-90deg) translateZ(120px);
   }
 }
+
 

@@ -1,245 +1,91 @@
-import React from 'react'
-import { keyframes, styled } from 'styled-components'
-import rayan from '../images/rayan.jpeg'
-import { IoLogoWhatsapp } from "react-icons/io5";
-import { FiInstagram } from "react-icons/fi";
-import { GrLinkedinOption, GrFacebookOption } from "react-icons/gr";
-import SpaceAnimation from './Star'
-import { Link as ScrollLink } from 'react-scroll';
+import {  FaInstagram, FaArrowRight } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io";
+import rayan from '../images/reo.jpg'
+import { motion } from "framer-motion";
+import Vid from '../images/vid.mp4'
 
-const Home = () => {
+export default function Home() {
   return (
-    <Container id='home'>
-      <ProtfolioPic>
-        <img src={rayan} alt='rayan' loading="eager" fetchpriority="high"/>
-      </ProtfolioPic>
-      <MyInfo>
-        <h1>Hi My Name Is Rayan<TypewriterText>I Am A Web Developer.</TypewriterText></h1>
-        <p>
-        Hello! I'm Rayan, a Front-End Developer passionate about building modern, user-friendly web applications. Skilled in React.js, Next.js, and Node.js, I focus on performance, design, and seamless user experiences. Let’s create something amazing! 🚀
-        </p>
-        <Socials>
-          <a href='https://facebook.com/rayan.salem.7777' title='facebook' target='_blank' rel='noopener noreferrer'>
-            <GrFacebookOption />
-          </a>
-          <a href='https://wa.link/ia261k' title='whatsapp' target='_blank' rel='noopener noreferrer'>
-            <IoLogoWhatsapp />
-          </a>
-          <a href='https://www.instagram.com/rayan_belalll_?igsh=MWcOcDEzMjZyZWd6bQ%3D%3D&utm_source=qr' title='instagram' target='_blank' rel='noopener noreferrer'>
-            <FiInstagram />
-          </a>
-          <a href='https://www.linkedin.com/in/rayan-bilal-bb414925b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' title='linkedin' target='_blank' rel='noopener noreferrer'>
-            <GrLinkedinOption />
-          </a>
-        </Socials>
-        <a href="#about">
-          <ScrollLink to="about" smooth={true} duration={1000}>
-            <Moreaboutme>More About Me</Moreaboutme>
-          </ScrollLink>
-        </a>
-      </MyInfo>
-      <SpaceAnimation />
-    </Container>
-  )
+    <div className="relative min-h-screen bg-neutral-950  overflow-hidden">
+
+      <video
+        className="absolute inset-0 z-30"
+        src={Vid}
+        autoPlay
+        muted
+        loop
+      />
+      <div className="absolute inset-0 bg-black/50 z-40"></div>
+      <div className="relative z-50 h-[42px] flex justify-between bg-neutral-950 items-center px-4 md:px-60  border-b border-neutral-800">
+        <img src="https://framerusercontent.com/images/ETKy6pcTVJ5pEm7xuvzpO0jv9cw.svg" alt="img-portfolio" className="w-12 h-5" />
+        <div className="flex items-center gap-6 text-[11px] text-white/50">
+          <a href="#projects" className="hover:text-white" >Projects</a>
+          <a href="#about" className="hover:text-white">About</a>
+          <a href="#contact" className="hover:text-white">Contact</a>
+        </div>
+      </div>
+      <div className="flex flex-col items-center justify-center pt-20 pb-32 relative z-40">
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          src={rayan}
+          alt="profile"
+          className="rounded-full w-28 h-28 object-cover shadow-md shadow-white"
+        />
+        <motion.p className="text-white/70 text-[9px] mt-4 flex items-center gap-2" initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}>
+          <motion.span
+            className="text-green-600 text-[16px] trasnform"
+            animate={{ scale: [1, 1.4, 1], opacity: [1, 0.4, 1] }}
+            transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
+          >
+            ●
+          </motion.span>
+          <span>available for work</span>
+        </motion.p>
+        <motion.h1 className="text-3xl md:text-4xl mt-2 font-medium text-white" initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}>
+          Rayan <span className="italic font-light text-gray-400 tracking-[-0.14em]">Salem</span>
+        </motion.h1>
+        <motion.p initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }} className="text-gray-400 mt-2 text-xs">UI/UX Designer && Full Stack Developer Based in Switzerland.</motion.p>
+
+        {/* Social Icons */}
+        <motion.div className="flex items-center gap-7 mt-4 text-base text-gray-400" initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2.5 }}>
+         <a href="https://github.com/reobest"> <FaGithub className="hover:text-white cursor-pointer" /></a>
+          <span className="text-gray-400/50">|</span>
+         <a href="https://www.instagram.com/rayan_belalll_?igsh=MWc0cDEzMjZyZWd6bQ%3D%3D&utm_source=qr "> <FaInstagram className="hover:text-white cursor-pointer" /></a>
+          <span className="text-gray-400/50">|</span>
+         <a href="https://facebook.com/rayan.salem.7777"> <FaFacebook className="hover:text-white cursor-pointer" /></a>
+        </motion.div>
+
+        {/* Contact Button */}
+       <a href="#contact"> <motion.button initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 3 }} className="flex justify-center items-center mt-6 p-3 bg-black text-white  
+        rounded-full text-xs font-light gap-1 border-[.5px] border-gray-900 shadow-sm shadow-white">
+          <FaArrowRight className="transform -rotate-45 font-thin" /> Contact Me
+        </motion.button></a>
+        <motion.div
+          animate={{ y: [0, 10, 0] }}
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            ease: "easeInOut"
+          }}
+        >
+          <IoIosArrowDown className="mt-10 text-white text-xl" />
+        </motion.div>
+      </div>
+    </div>
+  );
 }
 
-export default Home
-
-const Moreaboutme = styled.button`
-   margin-top: 30px;
-   font-size: 15px;
-  width: 200px;
-  height: 40px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: lato;
-  color: #3cc6d8;
-  background-color: transparent;
-  -webkit-transition: 0.3s all ease-in;
-  transition: 0.3s all ease-in;
-  border: 2px solid #3cc6d8;
-  &:hover{
-    color: #14203d;
-    -webkit-box-shadow: 0px 0px 20px 15px #3cc6d8;
-  box-shadow: 0px 0px 30px 20px #3cc6d8;
-  background-color: #3cc6d8;
-  }
-`
-
-const typingAnimation = keyframes`
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-`
-
-const TypewriterText = styled.div`
-  overflow: hidden;
-  white-space: nowrap;
-  animation: ${typingAnimation} 4s steps(20, end) infinite;
-`
-
-const Socials = styled.div`
-margin-top: 20px;
-width: 250px;
-height: 50px;
-display: flex;
-align-items: center;
-justify-content: space-around;
-svg{
-    &:hover{
-        scale: 1.06;
-        padding: 8px;
-    }
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border: solid 2px #3cc6d8;
-    color:#3cc6d8;
-    border-radius: 50%;
-    font-size: 10px;
-    box-sizing: border-box;
-    padding: 8px;
-}
-`
-
-const Container = styled.div`
-display: flex;
-align-items: center;
-flex-wrap: wrap;
-justify-content: space-around;
-position: relative;
-color: #fff;
-width: 100%;
-min-height:100vh;
-`
-
-const Animate = keyframes`      
-0%{
-background-position: 0% 0%;
-}
-25%{
-background-position: 50% 0%;
-}
-50%{
-background-position:100% 0% ;
-}
-75%{
-background-position:50% 0% ;
-}
-100%{
-background-position: 0% 0%;
-}
-`
-
-const bounceAnimation = keyframes`
-  0%, 100% {
-    transform: translateY(0);
-  }26%{
-    transform: translateY(-5px);
-  }
-  32% {
-    transform: translateY(-10px);
-  }50% {
-    transform: translateY(-15px);
-  }66%{
-    transform: translateY(-10px);
-  }82%{
-    transform: translateY(-5px);
-  }
-`
-
-const slideInFromRight = keyframes`
-  from {
-    transform: translateX(400px);
-  }
-  to {
-    transform: translateX(0);
-  }
-`;
-
-const slideInFromLeft = keyframes`
-  from {
-    transform: translateX(-400px);
-  }
-  to {
-    transform: translateX(0);
-  }
-`;
-
-const MyInfo = styled.div`
-    position: relative;
-    width: 450px;
-    height: auto;
-    animation: ${slideInFromRight} 2s ease-in-out;
-    >h1{
-      @media  only screen  and (max-width:450px) {
-        font-size: 30px;
-        text-align: center;
-    }
-        font-size: 40px;
-        font-weight: 400;
-        >span{
-            font-weight: 600;
-            color: #EA738D;
-            animation-name: ${Animate}; 
-            animation-delay: 0ms;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation-iteration-count: infinite;
-            animation-duration: 10s;
-            animation-timing-function: ease-in-out; 
-        }
-    }
-    >p{
-      @media  only screen  and (max-width:450px) {
-        font-size: 14px;
-        text-align: center;
-    }
-            font-family: "Playfair Display", serif;
-            font-optical-sizing: auto;
-            font-style: normal;
-            font-display: swap;
-            line-height: 20px;
-            font-weight: 200;
-            font-size: 16px;
-    }
-    @media  only screen  and (max-width:450px) {
-      margin-top: 70px;
-      box-sizing: border-box;
-      padding: 0 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-`
-
-const ProtfolioPic = styled.div`
-    position: relative;
-    z-index: 999;
-    border: #3cc6d8 solid 5px;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    transition: all 2s ease-in-out;
-    animation: ${bounceAnimation} 1s infinite ease-in-out,${slideInFromLeft} 2s ease-in-out;
-    box-shadow: 0px 0px 10px 10px #3cc6d8;
-    @media  only screen  and (max-width:450px) {
-      width: 300px;
-      height: 300px;
-      margin-top: 150px;
-    }
-    >img{
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-    }
-    :hover{
-        >img{
-            transform: scale(1.07);
-        }
-    }
-`

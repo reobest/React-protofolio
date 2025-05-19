@@ -13,7 +13,7 @@ export default function FaqSection() {
 
     return (
         <motion.section
-            className="relative bg-black/80 text-white py-20 px-6 flex flex-col md:flex-row items-center justify-center brightness-75">
+            className="relative bg-black/80 text-white py-20 px-6 flex flex-col md:flex-row items-center justify-center brightness-75 overflow-hidden">
             <div className="absolute top-[70%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-white/20 rounded-full blur-3xl z-0"></div>
             <motion.div
                 initial={{ opacity: 0, x: -80 }}

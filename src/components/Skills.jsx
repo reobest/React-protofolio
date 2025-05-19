@@ -21,7 +21,7 @@ export default function SkillsExperience() {
             };
         }, []);
     return (
-        <div className="relative bg-black text-white px-6 py-12 md:px-20 lg:px-32 flex flex-col items-center">
+        <div className="relative bg-black text-white px-6 py-12 md:px-20 lg:px-32 flex flex-col items-center overflow-hidden">
             <div className="absolute top-[80%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-white/20 rounded-full blur-3xl z-0"></div>
             <h2 className="text-center text-xs uppercase tracking-widest text-white/60 mb-8 flex items-center gap-2">
                 <div className="bg-white/70 h-[1px] w-[25px]"></div>

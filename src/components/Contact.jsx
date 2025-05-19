@@ -42,7 +42,7 @@ const Contact = () => {
   const inputBase = 'bg-transparent border-2 border-white/60 text-white rounded px-3 py-2 text-sm focus:outline-none focus:border-white placeholder-white/60';
 
   return (
-    <div id="contact" className="relative w-full min-h-screen flex flex-col items-center px-4 text-white pt-24 bg-black">
+    <div id="contact" className="relative w-full min-h-screen flex flex-col items-center px-4 text-white pt-24 bg-black overflow-hidden">
       <div className="absolute top-[110%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-white/20 rounded-full blur-3xl z-0"></div>
       <h1 className="text-3xl font-semibold text-white/90 mb-16">
         Contact <span className="italic text-white/70 tracking-[-0.1em] font-normal">Me!</span>

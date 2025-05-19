@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 export default function About() {
   return (
     <section id="about" 
-    className="h-[800px] md:h-[400px]  bg-neutral-950 text-white flex items-center justify-center px-4  md:px-20 border border-l-0 border-r-0 border-t-gray-800 border-white/5"
+    className="h-[800px] md:h-[400px]  bg-neutral-950 text-white flex items-center justify-center px-4  md:px-20 border border-l-0 
+    border-r-0 border-t-gray-800 border-white/5 overflow-hidden"
       style={{
         backgroundColor: '#000', 
         backgroundImage: `

@@ -1,30 +1,24 @@
 "use client"
 import { useEffect, useState } from 'react';
-import { webprojects } from '../projects/myprojects'
+import { webprojects } from '../constants/myprojects'
 import { motion } from 'framer-motion';
 export default function Projects() {
     const [hover, setHover] = useState(false)
     const [repeatedProjects, setRepeatedProjects] = useState([])
-
+    const [isDesktop, setIsDesktop] = useState(false)
     useEffect(() => {
         const updateProjects = () => {
             const isMobile = window.innerWidth < 768;
+            setIsDesktop(!isMobile);
             const length = isMobile ? 1 : 10;
             setRepeatedProjects(Array(length).fill(webprojects).flat());
         };
-
-        // Initial check
         updateProjects();
-
-        // Listen to window resize
         window.addEventListener('resize', updateProjects);
-
-        // Cleanup on unmount
         return () => {
             window.removeEventListener('resize', updateProjects);
         };
     }, []);
-
 
     return (
         <section id="projects" className="relative bg-black text-white py-16 overflow-hidden min-h-[600px]">
@@ -53,7 +47,7 @@ export default function Projects() {
                 </motion.h1>
             </div>
 
-            <div className="flex flex-col items-center md:flex-row md:animate-marquee gap-6 w-full md:w-[5000px]">
+            <div className={`flex flex-col items-center md:flex-row gap-6 w-full md:w-[5000px] ${isDesktop ? 'animate-marquee' : ''}`}>
                 {repeatedProjects.map((project, index) => {
                     const { name, img, link, github } = project
                     return <div key={index} className="w-[340px] md:w-[350px] bg-transparent rounded-2xl shadow-xl"

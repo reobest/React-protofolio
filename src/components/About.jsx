@@ -6,17 +6,16 @@ export default function About() {
     <section id="about" 
     className="h-[800px] md:h-[400px]  bg-neutral-950 text-white flex items-center justify-center px-4  md:px-20 border border-l-0 border-r-0 border-t-gray-800 border-white/5"
       style={{
-        backgroundColor: '#000', // black background
+        backgroundColor: '#000', 
         backgroundImage: `
         linear-gradient(#050505  1px, transparent 1px),
         linear-gradient(90deg, #050505 1px, transparent 1px)
       `,
-        backgroundSize: '12px 12px', // 2px = 1px line + 1px space => 500 squares in 1000px
+        backgroundSize: '12px 12px', 
         backgroundPosition: 'center'
       }}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-40 items-center">
-        {/* Text Content */}
         <div>
           <motion.h2
             initial={{ opacity: 0, x: 50 }}

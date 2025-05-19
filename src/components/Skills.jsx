@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { experience, skills } from '../projects/myprojects.js'
+import { experience, skills } from '../constants/myprojects.js'
 import { motion } from "framer-motion";
 
 
@@ -14,14 +14,8 @@ export default function SkillsExperience() {
                     setUpdateTextPosition(false)
                 }
             };
-    
-            // Initial check
             updateProjects();
-    
-            // Listen to window resize
             window.addEventListener('resize', updateProjects);
-    
-            // Cleanup on unmount
             return () => {
                 window.removeEventListener('resize', updateProjects);
             };

@@ -5,7 +5,7 @@ import { SiCss3 } from 'react-icons/si';
 import { DiJavascript } from 'react-icons/di';
 import { IoLogoNodejs } from 'react-icons/io5';
 import { BsGithub } from 'react-icons/bs';
-import '../index.css'; // For cube 3D animation (see below)
+import '../index.css'; 
 
 const Cubespinner = () => {
   return (

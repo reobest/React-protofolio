@@ -1,4 +1,3 @@
-import React from 'react'
 import Cubespinner from './Cubespinner'
 const CubeComponent = () => {
     return (

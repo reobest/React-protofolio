@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import { faqs } from "../projects/myprojects";
+import { faqs } from "../constants/myprojects";
 
 export default function FaqSection() {
     const [openIndex, setOpenIndex] = useState(null);

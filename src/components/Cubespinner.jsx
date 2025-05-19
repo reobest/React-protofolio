@@ -9,7 +9,7 @@ import '../index.css';
 
 const Cubespinner = () => {
   return (
-    <div className="w-full h-full flex items-center justify-center">
+    <div className="w-full h-full flex items-center justify-center overflow-hidden">
       <div className="cube-container relative w-32 h-32">
         <div className="cube w-full h-full absolute animate-spin-3d">
           <div className="cube-side cube-side--front text-cyan-400"><FaReact className="w-full h-full" /></div>

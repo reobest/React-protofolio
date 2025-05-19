@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import './index.css';
 import Home from "./components/Home";
 import About from "./components/About";
@@ -32,10 +32,10 @@ function App() {
       <Projects />
       <Skills />
       <Contact />
-      <MouseFollower
+      {/* <MouseFollower
         x={mousePosition.x}
         y={mousePosition.y}
-      />
+      /> */}
     </main>
   );
 }

@@ -11,7 +11,7 @@ export default function Home() {
 
       <video
         className="absolute inset-0 z-30  w-full h-full object-cover pointer-events-none"
-        src='/vid.mp4'
+        src='/outvid.mp4'
         autoPlay
         muted
         loop

@@ -4,18 +4,18 @@ import { FaGithub } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import rayan from '../images/reo.jpg'
 import { motion } from "framer-motion";
-import Vid from '../images/vid.mp4'
 
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-neutral-950  overflow-hidden">
 
       <video
-        className="absolute inset-0 z-30"
-        src={Vid}
+        className="absolute inset-0 z-30  w-full h-full object-cover pointer-events-none"
+        src='/vid.mp4'
         autoPlay
         muted
         loop
+        playsInline
       />
       <div className="absolute inset-0 bg-black/50 z-40"></div>
       <div className="relative z-50 h-[42px] flex justify-between bg-neutral-950 items-center px-4 md:px-60  border-b border-neutral-800">

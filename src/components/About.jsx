@@ -16,7 +16,7 @@ export default function About() {
         backgroundPosition: 'center'
       }}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-40 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-40 items-center overflow-hidden">
         <div>
           <motion.h2
             initial={{ opacity: 0, x: 50 }}

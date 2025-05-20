@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 export default function About() {
   return (
     <section id="about" 
-    className="h-[800px] md:h-[400px]  bg-neutral-950 text-white flex items-center justify-center px-4  md:px-20 border border-l-0 
-    border-r-0 border-t-gray-800 border-white/5 overflow-hidden"
+    className="bg-neutral-950 text-white flex flex-col md:flex-row items-center justify-center gap-20 px-4 py-12  md:px-20 border border-l-0 
+    border-r-0 border-t-gray-800 border-white/5 "
       style={{
         backgroundColor: '#000', 
         backgroundImage: `
@@ -16,7 +16,6 @@ export default function About() {
         backgroundPosition: 'center'
       }}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-40 items-center overflow-hidden">
         <div>
           <motion.h2
             initial={{ opacity: 0, x: 50 }}
@@ -44,15 +43,13 @@ export default function About() {
           </button></a>
         </div>
 
-        <div className="relative w-[350px] md:w-[400px] rounded-xl overflow-hidden shadow-[0_20px_50px_#ffffff30]"  >
+        <div className="w-[350px] md:w-[400px] rounded-xl overflow-hidden shadow-[0_20px_50px_#ffffff30]"  >
           <img
             src="https://framerusercontent.com/images/2tsEoalKV0gW67C7KEF0opYwC4U.jpg?scale-down-to=1024"
             alt="designer at work"
             className="rounded-xl w-full object-cover h-[200px] md:h-[250px] grayscale transition-transform duration-100 ease-in-out hover:scale-105 hover:brightness-75"
           />
-          <div className="absolute inset-0 rounded-xl border border-white/5 pointer-events-none" />
         </div>
-      </div>
     </section>
   );
 }

@@ -10,21 +10,21 @@ import Skills from "./components/Skills";
 import { useState } from "react";
 import MouseFollower from "./components/MouseFollower";
 function App() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
 
-  useEffect(() => {
-    const handleMouseMove = (event) => {
-      setMousePosition({ x: event.clientX, y: event.clientY });
-    };
-    window.addEventListener("mousemove", handleMouseMove);
+  // useEffect(() => {
+  //   const handleMouseMove = (event) => {
+  //     setMousePosition({ x: event.clientX, y: event.clientY });
+  //   };
+  //   window.addEventListener("mousemove", handleMouseMove);
 
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("mousemove", handleMouseMove);
+  //   };
+  // }, []);
   return (
-    <main style={{ overflowX: "hidden" }}>
+    <main className="overflow-x-hidden">
       <Home />
       <About />
       <CubeComponent />

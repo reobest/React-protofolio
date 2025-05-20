@@ -8,12 +8,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  scroll-behavior: smooth;
   margin: 0;
   font-family:  'Roboto Slab', serif;
   font-display: swap;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background: black;
 }
 

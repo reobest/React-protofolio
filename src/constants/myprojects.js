@@ -10,44 +10,53 @@ import digitalHippo1 from '../images/project7.png'
 import digitalHippo2 from '../images/digital-hippo-2.png'
 import lms1 from '../images/homepage.png'
 import lms2 from '../images/lms-2.png'
+import Re1 from '../images/real-estate-1.png'
+import Re2 from '../images/real-estate-2.png'
+
 export const webprojects = [
-        {
-            name:"React Js Movie Hub",
-            img:[moviehub1,moviehub2],
-            link:"https://moviehub-eh90.onrender.com",
-            github:"https://github.com/reobest/moviehub",
-        },
-        {
-            name:"React Js Slack-clone Chat App",
-            img:[slack1,slack2],
-            link:"https://slackclone-cdl8.onrender.com",
-            github:"https://github.com/reobest/slackclone",
-        },
-        {
-            name:"Next js e-commerce",
-            img:[digitalHippo1,digitalHippo2],
-            link:"https://digital-hippo-lc7e.onrender.com",
-            github:"https://github.com/reobest/digital-hippo",
-        },
-        {
-            name:"Next js Dribble clone App",
-            img:[dribble1,dribble2],
-            link:"https://lively-lebkuchen-d73979.netlify.app",
-            github:"https://github.com/reobest/dribbleclone",
-        },
-        {
-            name:"Next js Carepulse",
-            img:[carepulse1,carepulse2],
-            link:"https://main--care-pulse-managment-system.netlify.app",
-            github:"https://github.com/reobest/Care-pulse",
-        },
-        {
-            name:"Learning management system",
-            img:[lms1,lms2],
-            link:"https://lms-ha96.vercel.app",
-            github:"https://github.com/reobest/lms",
-        },
-] 
+    {
+        name: "React Js Movie Hub",
+        img: [moviehub1, moviehub2],
+        link: "https://moviehub-eh90.onrender.com",
+        github: "https://github.com/reobest/moviehub",
+    },
+    {
+        name: "React Js Slack-clone Chat App",
+        img: [slack1, slack2],
+        link: "https://slackclone-cdl8.onrender.com",
+        github: "https://github.com/reobest/slackclone",
+    },
+    {
+        name: "Next js e-commerce",
+        img: [digitalHippo1, digitalHippo2],
+        link: "https://digital-hippo-lc7e.onrender.com",
+        github: "https://github.com/reobest/digital-hippo",
+    },
+    {
+        name: "Next js Dribble clone App",
+        img: [dribble1, dribble2],
+        link: "https://lively-lebkuchen-d73979.netlify.app",
+        github: "https://github.com/reobest/dribbleclone",
+    },
+    {
+        name: "Next js Carepulse",
+        img: [carepulse1, carepulse2],
+        link: "https://main--care-pulse-managment-system.netlify.app",
+        github: "https://github.com/reobest/Care-pulse",
+    },
+    {
+        name: "Learning management system",
+        img: [lms1, lms2],
+        link: "https://lms-ha96.vercel.app",
+        github: "https://github.com/reobest/lms",
+    },
+    {
+        name: "Real-estate App",
+        img: [Re1, Re2],
+        link: "https://main.d1mz41n3zhpo1h.amplifyapp.com/",
+        github: "https://github.com/reobest/real-estate",
+    },
+]
 export const experience = [
     { role: 'Full Stack Developer', company: 'Outlier', duration: 'April 2024 - Present' },
     { role: 'Full Stack Developer', company: 'WebOps', duration: 'August 2024 – February 2025' },
@@ -57,26 +66,26 @@ export const skills = [
     // Front-End
     'HTML5', 'CSS3', 'SASS', 'Bootstrap', 'Tailwind CSS',
     'JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Redux Toolkit',
-    
+
     // Back-End
     'Node.js', 'Express.js', 'REST APIs', 'Firebase', 'MongoDB', 'PostgreSQL',
-  
+
     // Tools & Deployment
-    'Git', 'GitHub', 'GitLab' , 'Vercel', 'Docker',
-  
+    'Git', 'GitHub', 'GitLab', 'Vercel', 'Docker',
+
     // Testing & Optimization
     'React Testing Library', 'Jest', 'SEO Optimization',
-  
+
     // Other Skills
     'JSON', 'Clerk', 'Stripe',
-  
+
     // Programming Languages
     'C', 'Java', 'Python',
-  
+
     // Concepts
     'Object-Oriented Programming', 'Clean Code', 'Problem Solving'
-  ];
-  export const faqs = [
+];
+export const faqs = [
     {
         question: "Who is Rayan Salem?",
         answer:

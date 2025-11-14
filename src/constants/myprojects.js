@@ -58,17 +58,16 @@ export const webprojects = [
     },
 ]
 export const experience = [
-    { role: 'Full Stack Developer', company: 'Outlier', duration: 'April 2024 - Present' },
     { role: 'Full Stack Developer', company: 'WebOps', duration: 'August 2024 – February 2025' },
-    { role: 'Intern FrontEnd Developer', company: 'Route', duration: 'April 2023 – April 2024' },
+    { role: 'Full Stack Developer', company: 'Outlier', duration: 'March 2024 - Present' },
 ];
 export const skills = [
     // Front-End
-    'HTML5', 'CSS3', 'SASS', 'Bootstrap', 'Tailwind CSS',
-    'JavaScript', 'TypeScript', 'React.js', 'Next.js', 'Redux Toolkit',
+    'HTML5', 'CSS3', 'SASS', 'Bootstrap', 'Tailwind CSS','Python',
+    'JavaScript', 'Java','TypeScript', 'React.js', 'Next.js', 'Redux Toolkit',
 
     // Back-End
-    'Node.js', 'Express.js', 'REST APIs', 'Firebase', 'MongoDB', 'PostgreSQL',
+    'Node.js', 'Express.js', 'REST APIs', 'Firebase', 'MongoDB', 'PostgreSQL','Spring boot',
 
     // Tools & Deployment
     'Git', 'GitHub', 'GitLab', 'Vercel', 'Docker',

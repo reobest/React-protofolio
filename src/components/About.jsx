@@ -31,7 +31,7 @@ export default function About() {
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.4 }}
             className="max-w-96 text-white/60 text-xs md:text-sm mt-6 leading-relaxed">
-            Hello! I'm Rayan, a passionate Full-Stack Developer who builds dynamic,
+            Hello! I'm Rayan, a passionate Full-Stack Developer who builds dynamic
             user-friendly web applications using React.js, Next.js, and Node.js.
             With a background in computer engineering, I focus on crafting scalable,
             visually engaging, and high-performance digital experiences. I love turning ideas into clean,

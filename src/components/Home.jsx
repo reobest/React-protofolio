@@ -53,7 +53,7 @@ export default function Home() {
         </motion.h1>
         <motion.p initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 2 }} className="text-gray-400 mt-2 text-xs">UI/UX Designer && Full Stack Developer Based in Switzerland.</motion.p>
+          transition={{ duration: 2 }} className="text-gray-400 mt-2 text-xs">UI/UX Designer && Software Engineer Based in Switzerland.</motion.p>
 
         {/* Social Icons */}
         <motion.div className="flex items-center gap-7 mt-4 text-base text-gray-400" initial={{ opacity: 0 }}

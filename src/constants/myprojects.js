@@ -70,7 +70,7 @@ export const skills = [
     'Node.js', 'Express.js', 'REST APIs', 'Firebase', 'MongoDB', 'PostgreSQL','Spring boot',
 
     // Tools & Deployment
-    'Git', 'GitHub', 'GitLab', 'Vercel', 'Docker',
+    'Git', 'GitHub', 'GitLab', 'Vercel', 'Docker', 'AWS (S3,EC2,Cognito,Amplify)',
 
     // Testing & Optimization
     'React Testing Library', 'Jest', 'SEO Optimization',
@@ -82,7 +82,7 @@ export const skills = [
     'C', 'Java', 'Python',
 
     // Concepts
-    'Object-Oriented Programming', 'Clean Code', 'Problem Solving'
+    'Object-Oriented Programming', 'Clean Code', 'Problem Solving','Test Driven Development'
 ];
 export const faqs = [
     {

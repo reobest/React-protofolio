@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { webprojects } from '../constants/myprojects'
 import { motion } from 'framer-motion';
 export default function Projects() {
-    const [hover, setHover] = useState(false)
+    const [, setHover] = useState(false)
     const [repeatedProjects, setRepeatedProjects] = useState([])
     const [isDesktop, setIsDesktop] = useState(false)
     useEffect(() => {

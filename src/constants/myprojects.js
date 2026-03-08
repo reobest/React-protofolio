@@ -58,19 +58,19 @@ export const webprojects = [
     },
 ]
 export const experience = [
-    { role: 'Full Stack Developer', company: 'WebOps', duration: 'August 2024 – February 2025' },
-    { role: 'Full Stack Developer', company: 'Outlier', duration: 'March 2024 - Present' },
+    { role: 'Full Stack Developer', company: 'WebOps', duration: 'Aug 2024 – Aug 2025' },
+    { role: 'Full Stack Developer', company: 'Outlier', duration: 'Sep 2024 - Present' },
 ];
 export const skills = [
     // Front-End
-    'HTML5', 'CSS3', 'SASS', 'Bootstrap', 'Tailwind CSS','Python',
-    'JavaScript', 'Java','TypeScript', 'React.js', 'Next.js', 'Redux Toolkit',
+    'HTML5', 'CSS3', 'SASS', 'Bootstrap', 'Tailwind CSS',
+    'JavaScript','TypeScript', 'React.js', 'Next.js', 'Redux Toolkit',
 
     // Back-End
     'Node.js', 'Express.js', 'REST APIs', 'Firebase', 'MongoDB', 'PostgreSQL','Spring boot',
 
     // Tools & Deployment
-    'Git', 'GitHub', 'GitLab', 'Vercel', 'Docker', 'AWS (S3,EC2,Cognito,Amplify)',
+    'Git', 'GitHub', 'GitLab', 'Vercel', 'Docker', 'AWS (S3,EC2,Cognito,Amplify,Lambda)',
 
     // Testing & Optimization
     'React Testing Library', 'Jest', 'SEO Optimization',
@@ -80,6 +80,8 @@ export const skills = [
 
     // Programming Languages
     'C', 'Java', 'Python',
+
+    'K8s','CI/CD Pipelines','Cursor','Unit & Integration Testing','System Design',
 
     // Concepts
     'Object-Oriented Programming', 'Clean Code', 'Problem Solving','Test Driven Development'
